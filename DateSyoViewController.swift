@@ -12,18 +12,18 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
     
     var SelectDate:Date? = nil
     
-
+    
     @IBOutlet weak var eventTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         eventTable.delegate = self
         eventTable.dataSource = self
         
     }
-
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -42,8 +42,6 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
         } else{
             return data.count
         }
-        
-        
     }
     
     
@@ -67,7 +65,7 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
                 let object = data[indexPath.row]
                 
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Eventcell",
-                                                             for: indexPath)
+                                                         for: indexPath)
                 
                 let labelTitle = cell.viewWithTag(1) as! UILabel
                 labelTitle.text = object.title
@@ -76,7 +74,7 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
                 labelPlace.text = object.place
                 
                 let timeformatter = DateFormatter()
-
+                
                 timeformatter.locale = Locale(identifier: "ja_JP")
                 timeformatter.dateFormat = "H:mm"
                 
@@ -91,7 +89,7 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
             } else {
                 
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Eventcell",
-                                                             for: indexPath)
+                                                         for: indexPath)
                 
                 let labelTitle = cell.viewWithTag(1) as! UILabel
                 labelTitle.text = "新規イベント"
@@ -101,7 +99,7 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
         } else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "Eventcell",
-                                                         for: indexPath)
+                                                     for: indexPath)
             return cell
         }
         
@@ -137,9 +135,9 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
     @IBOutlet weak var Update: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-      //テーブルを再描画
-      Update.reloadData()
+        super.viewWillAppear(animated)
+        //テーブルを再描画
+        Update.reloadData()
     }
-
+    
 }
