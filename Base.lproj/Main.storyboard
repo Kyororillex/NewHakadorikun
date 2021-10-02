@@ -1072,7 +1072,7 @@
                                                     <rect key="frame" x="324" y="9" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.27843137254901962" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
-                                                        <action selector="Switch:" destination="4tg-Za-T33" eventType="valueChanged" id="Beb-dt-Ydi"/>
+                                                        <action selector="SwitchOn:" destination="4tg-Za-T33" eventType="valueChanged" id="eUO-lE-fdq"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -1104,6 +1104,9 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <locale key="locale" localeIdentifier="ja_JP"/>
+                                                    <connections>
+                                                        <action selector="TimeChange:" destination="4tg-Za-T33" eventType="valueChanged" id="6x6-eE-eKB"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -1277,6 +1280,7 @@
                         <outlet property="EventTitle" destination="dTZ-jp-WT0" id="rQ2-Vx-JJr"/>
                         <outlet property="MemoLabel" destination="J1u-wm-ZQc" id="GHd-Ju-K0Q"/>
                         <outlet property="StartPicker" destination="eXQ-6M-k3n" id="oac-lh-dr0"/>
+                        <outlet property="Switch" destination="IsW-44-QJq" id="F3d-a4-XKz"/>
                         <outlet property="URLLabel" destination="zPM-WC-HS7" id="2FL-l1-Jrs"/>
                         <outlet property="detailLabel" destination="0ot-oD-xNV" id="ZUd-wO-iHb"/>
                         <outlet property="localLabel" destination="ckx-Bu-cKd" id="JlW-cp-38t"/>
