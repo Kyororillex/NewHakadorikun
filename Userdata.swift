@@ -26,8 +26,8 @@ class  EventObj: Object {
     @objc dynamic var ID = ""
     
     //Primary Keyの設定
-        override static func primaryKey() -> String? {
-            return "ID"
-        }
+    override static func primaryKey() -> String? {
+        return "ID"
+    }
     
 }

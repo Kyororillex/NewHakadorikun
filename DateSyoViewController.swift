@@ -130,14 +130,10 @@ class DateSyoViewController: UIViewController, UITableViewDelegate,UITableViewDa
         
     }
     
-    
-    
-    @IBOutlet weak var Update: UITableView!
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //テーブルを再描画
-        Update.reloadData()
+        eventTable.reloadData()
     }
     
 }

@@ -89,7 +89,7 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
     //日付をタップしたしたときの処理
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition){
         
-        let SelectDay = getDay(date)
+       // let SelectDay = getDay(date)
         
         //遷移先のViewControllerを設定
         let DateSyoViewController = self.storyboard?.instantiateViewController(withIdentifier: "DateViewController") as! DateSyoViewController
